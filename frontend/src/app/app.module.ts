@@ -14,13 +14,19 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import { HomeComponent } from './views/home/home.component';
 
+import { MatCardModule } from "@angular/material/card";
+import { ProdutoComponent } from './views/produto/produto.component';
+import { CategoriaComponent } from './views/categoria/categoria.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    ProdutoComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,8 @@ import { HomeComponent } from './views/home/home.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
