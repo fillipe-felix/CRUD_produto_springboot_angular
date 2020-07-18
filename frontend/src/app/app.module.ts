@@ -17,6 +17,10 @@ import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from "@angular/material/card";
 import { ProdutoComponent } from './views/produto/produto.component';
 import { CategoriaComponent } from './views/categoria/categoria.component';
+import { ProdutoCreateComponent } from './components/produto/produto-create/produto-create.component';
+
+import { MatButtonModule } from "@angular/material/button";
+import { CategoriaCreateComponent } from './components/categoria/categoria-create/categoria-create.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { CategoriaComponent } from './views/categoria/categoria.component';
     NavComponent,
     HomeComponent,
     ProdutoComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    ProdutoCreateComponent,
+    CategoriaCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,8 @@ import { CategoriaComponent } from './views/categoria/categoria.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
