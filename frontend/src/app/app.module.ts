@@ -21,6 +21,7 @@ import { ProdutoCreateComponent } from './components/produto/produto-create/prod
 
 import { MatButtonModule } from "@angular/material/button";
 import { CategoriaCreateComponent } from './components/categoria/categoria-create/categoria-create.component';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { CategoriaCreateComponent } from './components/categoria/categoria-creat
     ProdutoComponent,
     CategoriaComponent,
     ProdutoCreateComponent,
-    CategoriaCreateComponent
+    CategoriaCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,8 @@ import { CategoriaCreateComponent } from './components/categoria/categoria-creat
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
