@@ -1,6 +1,7 @@
 package com.produto.produto.services;
 
 import com.produto.produto.entities.Categoria;
+import com.produto.produto.entities.Produto;
 import com.produto.produto.repositories.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,5 +27,12 @@ public class CategoriaService {
 
     public Categoria insert(Categoria objCategoria) {
         return categoriaRepository.save(objCategoria);
+    }
+
+    public Categoria update(Integer id, Categoria categoria) {
+        Optional<Categoria> newCategoria = categoriaRepository.findById(id);
+
+        newCategoria.get().setNome(categoria.getNome());
+        return categoriaRepository.save(newCategoria.get());
     }
 }

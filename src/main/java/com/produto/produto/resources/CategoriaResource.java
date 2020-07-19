@@ -1,6 +1,7 @@
 package com.produto.produto.resources;
 
 import com.produto.produto.entities.Categoria;
+import com.produto.produto.entities.Produto;
 import com.produto.produto.services.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -35,5 +36,11 @@ public class CategoriaResource {
         objCategoria = categoriaService.insert(objCategoria);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(objCategoria.getId()).toUri();
         return ResponseEntity.created(uri).build();
+    }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<Categoria> update(@PathVariable Integer id, @RequestBody Categoria categoria){
+        categoria = categoriaService.update(id, categoria);
+        return ResponseEntity.ok().body(categoria);
     }
 }

@@ -37,6 +37,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { CategoriaReadComponent } from './components/categoria/categoria-read/categoria-read.component';
 import { ProdutoUpdateComponent } from './components/produto/produto-update/produto-update.component';
 import { ProdutoDeleteComponent } from './components/produto/produto-delete/produto-delete.component';
+import { CategoriaUpdateComponent } from './components/categoria/categoria-update/categoria-update.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { ProdutoDeleteComponent } from './components/produto/produto-delete/prod
     CategoriaReadComponent,
     ProdutoUpdateComponent,
     ProdutoDeleteComponent,
+    CategoriaUpdateComponent,
   ],
   imports: [
     BrowserModule,
