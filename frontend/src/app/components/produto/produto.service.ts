@@ -42,4 +42,9 @@ export class ProdutoService {
     const url =`${this.baseUrl}/${produto.id}`
     return this.http.put<ProdutoModel>(url, produto)
   }
+
+  delete(id: string): Observable<ProdutoModel>{
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<ProdutoModel>(url)
+  }
 }

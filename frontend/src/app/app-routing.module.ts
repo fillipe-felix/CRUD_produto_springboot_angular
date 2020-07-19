@@ -8,6 +8,7 @@ import {CategoriaComponent} from "./views/categoria/categoria.component";
 import {ProdutoCreateComponent} from "./components/produto/produto-create/produto-create.component";
 import {CategoriaCreateComponent} from "./components/categoria/categoria-create/categoria-create.component";
 import {ProdutoUpdateComponent} from "./components/produto/produto-update/produto-update.component";
+import {ProdutoDeleteComponent} from "./components/produto/produto-delete/produto-delete.component";
 
 const routes: Routes = [
     {
@@ -38,6 +39,11 @@ const routes: Routes = [
     {
         path: "produtos/update/:id",
         component: ProdutoUpdateComponent
+    },
+
+    {
+        path: "produtos/delete/:id",
+        component: ProdutoDeleteComponent
     }
 ];
 

@@ -36,6 +36,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { CategoriaReadComponent } from './components/categoria/categoria-read/categoria-read.component';
 import { ProdutoUpdateComponent } from './components/produto/produto-update/produto-update.component';
+import { ProdutoDeleteComponent } from './components/produto/produto-delete/produto-delete.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { ProdutoUpdateComponent } from './components/produto/produto-update/prod
     ProdutoRead2Component,
     CategoriaReadComponent,
     ProdutoUpdateComponent,
+    ProdutoDeleteComponent,
   ],
   imports: [
     BrowserModule,
