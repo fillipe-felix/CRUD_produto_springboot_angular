@@ -29,6 +29,11 @@ import { FormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
+import { ProdutoReadComponent } from './components/produto/produto-read/produto-read.component';
+import { ProdutoRead2Component } from './components/produto/produto-read2/produto-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -41,6 +46,8 @@ import {MatSelectModule} from "@angular/material/select";
     CategoriaComponent,
     ProdutoCreateComponent,
     CategoriaCreateComponent,
+    ProdutoReadComponent,
+    ProdutoRead2Component,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +63,10 @@ import {MatSelectModule} from "@angular/material/select";
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

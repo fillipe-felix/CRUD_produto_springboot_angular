@@ -5,6 +5,7 @@ import {Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import {CategoriaModel} from "../categoria/categoria.model";
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -27,7 +28,17 @@ export class ProdutoService {
     return this.http.post<ProdutoModel>(this.baseUrl, produto)
   }
 
-  findAllCategorias(): Observable<CategoriaModel[]> {
-    return this.http.get<CategoriaModel[]>(this.baseUrl)
+  findAll(): Observable<ProdutoModel[]> {
+    return this.http.get<ProdutoModel[]>(this.baseUrl)
+  }
+
+  findById(id: number): Observable<ProdutoModel>{
+    const url =`${this.baseUrl}/${id}`
+    return this.http.get<ProdutoModel>(url)
+  }
+
+  update(produto: ProdutoModel): Observable<ProdutoModel>{
+    const url =`${this.baseUrl}/${produto.id}`
+    return this.http.put<ProdutoModel>(url, produto)
   }
 }
