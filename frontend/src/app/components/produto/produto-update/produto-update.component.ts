@@ -42,7 +42,7 @@ export class ProdutoUpdateComponent implements OnInit {
 
     updateProduto(): void {
         this.produtoService.update(this.produto).subscribe(() => {
-            this.produtoService.mostrarMessagem('Produto atualizado com sucesso!', 'green-snackbar-sucess')
+            this.produtoService.mostrarMessagem('Produto atualizado com sucesso!', false)
             this.router.navigate(['/produtos'])
         })
     }

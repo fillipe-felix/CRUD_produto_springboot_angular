@@ -1,15 +1,15 @@
 <mat-card>
     <mat-card-title>Atualizar Produto</mat-card-title>
     <form>
-        <mat-form-field>
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Produto" [(ngModel)]="produto.nome" name="nome" disabled>
         </mat-form-field>
 
-        <mat-form-field>
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Preço" [(ngModel)]="produto.preco" name="preco" disabled>
         </mat-form-field>
 
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <mat-label>Select</mat-label>
             <!--salva o valor de value em ngModel-->
             <mat-select placeholder="Categorias" [(ngModel)]="produto.categoria" name="categoria" disabled>

@@ -43,7 +43,7 @@ export class ProdutoDeleteComponent implements OnInit {
   deleteProduto(): void {
     const id = this.route.snapshot.paramMap.get('id')
     this.produtoService.delete(id).subscribe( () => {
-      this.produtoService.mostrarMessagem('Produto excluido com sucesso!', 'green-snackbar-sucess')
+      this.produtoService.mostrarMessagem('Produto excluido com sucesso!', false)
       this.router.navigate(['/produtos'])
     })
   }

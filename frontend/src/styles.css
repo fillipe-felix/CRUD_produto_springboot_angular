@@ -18,11 +18,11 @@ body {
 }
 
 
-.green-snackbar-sucess {
-    background: #08ff00;
+.msg-sucess {
+    background: #28a745;
 }
 
 
-.red-snackbar-error {
-    background: #e71921;
+.msg-error {
+    background: #e35e6b;
 }

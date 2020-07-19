@@ -27,7 +27,7 @@ export class CategoriaUpdateComponent implements OnInit {
 
   updateCategoria(): void {
     this.categoriaService.update(this.categoria).subscribe(() => {
-      this.categoriaService.mostrarMessagem('Categoria atualizada com sucesso!', 'green-snackbar-sucess')
+      this.categoriaService.mostrarMessagem('Categoria atualizada com sucesso!', false)
       this.router.navigate(['/categorias'])
     })
   }
