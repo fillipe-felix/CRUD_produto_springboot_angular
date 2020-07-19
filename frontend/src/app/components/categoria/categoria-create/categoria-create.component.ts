@@ -23,7 +23,7 @@ export class CategoriaCreateComponent implements OnInit {
   criarCategoria(): void{
     //subscribe depois que ele recebe o retorno do back-end ele chama essa arrow function
     this.categoriaService.insert(this.categoria).subscribe(() => {
-      this.categoriaService.mostrarMessagem('Categoria criada com sucesso!')
+      this.categoriaService.mostrarMessagem('Categoria criada com sucesso!', 'green-snackbar-sucess')
       this.router.navigate(["/categorias"]);
     })
   }

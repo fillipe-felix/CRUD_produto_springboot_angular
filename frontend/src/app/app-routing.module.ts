@@ -7,6 +7,7 @@ import {ProdutoComponent} from "./views/produto/produto.component";
 import {CategoriaComponent} from "./views/categoria/categoria.component";
 import {ProdutoCreateComponent} from "./components/produto/produto-create/produto-create.component";
 import {CategoriaCreateComponent} from "./components/categoria/categoria-create/categoria-create.component";
+import {ProdutoUpdateComponent} from "./components/produto/produto-update/produto-update.component";
 
 const routes: Routes = [
     {
@@ -32,6 +33,11 @@ const routes: Routes = [
     {
         path: "categorias/create",
         component: CategoriaCreateComponent
+    },
+
+    {
+        path: "produtos/update/:id",
+        component: ProdutoUpdateComponent
     }
 ];
 

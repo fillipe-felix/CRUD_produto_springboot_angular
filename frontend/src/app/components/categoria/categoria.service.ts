@@ -15,11 +15,12 @@ export class CategoriaService {
                 private http: HttpClient) {
     }
 
-    mostrarMessagem(msg: string): void {
+    mostrarMessagem(msg: string, className: string): void {
         console.log(this.snackBar.open(msg, 'X', {
             duration: 3000,
             horizontalPosition: "right",
-            verticalPosition: "top"
+            verticalPosition: "top",
+            panelClass: [className]
         }))
     }
 

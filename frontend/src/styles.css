@@ -16,3 +16,13 @@ body {
 .v-middle {
     vertical-align: middle;
 }
+
+
+.green-snackbar-sucess {
+    background: #08ff00;
+}
+
+
+.red-snackbar-error {
+    background: #e71921;
+}

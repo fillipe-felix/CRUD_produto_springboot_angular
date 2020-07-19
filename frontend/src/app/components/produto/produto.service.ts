@@ -16,11 +16,12 @@ export class ProdutoService {
   constructor(private snackBar: MatSnackBar,
               private http: HttpClient) { }
 
-  mostrarMessagem(msg: string): void {
+  mostrarMessagem(msg: string, className: string): void {
     console.log(this.snackBar.open(msg, 'X', {
       duration: 3000,
       horizontalPosition: "right",
-      verticalPosition: "top"
+      verticalPosition: "top",
+      panelClass: [className]
     }))
   }
 
@@ -32,7 +33,7 @@ export class ProdutoService {
     return this.http.get<ProdutoModel[]>(this.baseUrl)
   }
 
-  findById(id: number): Observable<ProdutoModel>{
+  findById(id: string): Observable<ProdutoModel>{
     const url =`${this.baseUrl}/${id}`
     return this.http.get<ProdutoModel>(url)
   }
