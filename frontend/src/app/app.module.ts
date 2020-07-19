@@ -34,6 +34,7 @@ import { ProdutoRead2Component } from './components/produto/produto-read2/produt
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { CategoriaReadComponent } from './components/categoria/categoria-read/categoria-read.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { MatSortModule } from '@angular/material/sort';
     CategoriaCreateComponent,
     ProdutoReadComponent,
     ProdutoRead2Component,
+    CategoriaReadComponent,
   ],
   imports: [
     BrowserModule,
