@@ -1,0 +1,2 @@
+# CRUD_produto_springboot_angular
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d41aad048e934b8db8ecc85712a52fd3)](https://app.codacy.com/manual/fillipe-felix/CRUD_produto_springboot_angular?utm_source=github.com&utm_medium=referral&utm_content=fillipe-felix/CRUD_produto_springboot_angular&utm_campaign=Badge_Grade_Dashboard)
