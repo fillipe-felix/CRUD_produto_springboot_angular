@@ -1,5 +1,6 @@
 package com.produto.produto.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
@@ -18,7 +19,8 @@ public class Categoria implements Serializable {
     private Integer id;
     private String nome;
 
-    @JsonManagedReference
+    @JsonIgnore
+    //@JsonManagedReference
     @OneToMany(mappedBy = "categoria")
     private List<Produto> produtos = new ArrayList<>();
 

@@ -18,7 +18,7 @@ export class ProdutoRead2Component implements AfterViewInit, OnInit {
 
 
     /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-    displayedColumns = ['id', 'nome', 'preco', 'acoes'];
+    displayedColumns = ['id', 'nome', 'preco', 'categoria', 'acoes'];
     EXAMPLE_DATA: ProdutoModel[]
     dataSource = new MatTableDataSource<ProdutoModel>(this.EXAMPLE_DATA);
 

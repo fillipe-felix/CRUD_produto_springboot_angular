@@ -32,12 +32,9 @@ export class ProdutoUpdateComponent implements OnInit {
         const id = this.route.snapshot.paramMap.get('id')
         this.produtoService.findById(id).subscribe(produto => {
             this.produto = produto
+            console.log(this.produto.categoria)
         })
-
-        this.categoriaService.findAll().subscribe(categorias => {
-            this.categorias = categorias
-            console.log(this.categorias)
-        })
+        this.findAllCategorias()
     }
 
     updateProduto(): void {
@@ -49,5 +46,12 @@ export class ProdutoUpdateComponent implements OnInit {
 
     cancelar(): void {
         this.router.navigate(['/produtos'])
+    }
+
+    findAllCategorias() {
+        this.categoriaService.findAll().subscribe(categorias => {
+            this.categorias = categorias
+            console.log(this.categorias)
+        })
     }
 }

@@ -11,7 +11,9 @@ import {Observable} from "rxjs";
 })
 export class CategoriaUpdateComponent implements OnInit {
 
-  categoria: CategoriaModel
+  categoria: CategoriaModel = {
+    nome: ''
+  }
 
   constructor(private categoriaService: CategoriaService,
               private router: Router,

@@ -37,7 +37,7 @@
         <!--<p>Valor selecionado: {{produto.categoria}}</p>-->
     </form>
 
-    <button mat-raised-button (click)="criarProduto()" color="primary">
+    <button mat-raised-button [disabled]="!produto.valid" (click)="criarProduto()" color="primary">
         Salvar
     </button>
 

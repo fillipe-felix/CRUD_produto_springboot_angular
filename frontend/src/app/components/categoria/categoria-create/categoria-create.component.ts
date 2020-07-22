@@ -20,7 +20,7 @@ export class CategoriaCreateComponent implements OnInit {
     ngOnInit(): void {
 
         this.categoria = this.fb.group({
-            nome: ['', Validators.required, Validators.minLength(2)]
+            nome: ['', Validators.required]
         })
     }
 
