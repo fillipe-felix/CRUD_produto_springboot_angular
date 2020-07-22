@@ -1,9 +1,13 @@
 <mat-card>
     <mat-card-title>Nova Categoria</mat-card-title>
-    <form>
+    <form [formGroup]="categoria">
         <mat-form-field appearance="outline">
             <mat-label>Nome</mat-label>
-            <input matInput placeholder="Ex: Refrigerante" [(ngModel)]="categoria.nome" name="nome" required>
+            <input matInput placeholder="Ex: Refrigerante" name="nome" formControlName="nome">
+            <mat-error
+                    *ngIf="categoria.touched || categoria.dirty && c.nome.errors?.required">Preencha o campo
+                nome
+            </mat-error>
         </mat-form-field>
     </form>
 

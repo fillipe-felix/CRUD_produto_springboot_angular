@@ -25,7 +25,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 import { HttpClientModule } from "@angular/common/http";
 
-import { FormsModule } from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
@@ -74,7 +74,8 @@ import { CategoriaUpdateComponent } from './components/categoria/categoria-updat
     MatSelectModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
